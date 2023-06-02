@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+*{
+    
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::selection {
+    background-color: var(--color-divider);
+}
+ 
+ ::-webkit-scrollbar {
+    width: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg,var(--color-divider)100%,var(--color-divider)0% );
+    background: var(--color-divider);
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    background-color: var(--color-bg);
+    font-family: var( --font-sans);
+    counter-reset: section;
+    line-height: 1.4;
 }
 
-.App-link {
-  color: #61dafb;
+
+a, a:hover {
+    color: unset;
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-btn {
+    border-radius: var(--border-radius);
+    color:  var(--color-green);
+    border: 1px solid var(--color-green);
+    background: transparent;
+    padding: 0.75rem 1rem;
+    line-height: 1;
+    font-size: var(--fs-xs);
+    font-family: var(--font-mono);
+    
+}
+
+.custom-btn:hover{
+    background-color: var(--color-hover)
+}
+
+.links a{
+    color: var(--color-light);
+    font-size: 22px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.links a:hover{
+    color: var(--color-green);    
+}
+
+.highlight{
+    color: var(--color-green);
+}
+
+
+.section__padding {
+    padding: 6rem 1rem ;
+}
+
+
+.max-width{
+    max-width: 280px;
+}
+
+@media screen and (max-width: 768px){
+    .section__padding {
+        padding: 3rem 1rem;
+    } 
+    
 }

@@ -1,0 +1,28 @@
+#about>p{
+    color: var(--color-text);
+    font-size: var(--fs-md);
+    font-weight: 500;
+    
+    
+}
+
+.techs p{
+    position: relative;
+    padding-left: 20px;
+    color: var(--color-text);
+    font-family: var(--font-mono);
+    font-size: clamp(var(--fs-xxs),3vw,var(--fs-xs));
+    margin: 0;
+    margin-bottom: 7px;
+
+}
+
+.techs p::before{
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: var(--color-green);
+    font-size: var(--fs-sm);
+    line-height: 12px;
+}
+
