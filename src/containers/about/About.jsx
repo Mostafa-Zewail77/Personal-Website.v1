@@ -18,13 +18,13 @@ function About() {
            I'm always willing to learn and grow as a software developer. I am passionate about staying up-to-date with the latest trends and technologies in the field, and I am dedicated to enhancing my skills through continuous learning and professional development.
         </p>
         <p> Here are some technologies I’ve been working with:</p>
-        <Row className=' techs pe-5'>
-          <Col sm={5} >
+        <Row className=' techs pe-md-5'>
+          <Col xs={6} md={5}>
             <p>HTML &amp; CSS</p>
             <p>JavaScript (ES6+)</p>
             <p>Bootstrap</p>
           </Col>
-          <Col sm={5} >
+          <Col xs={6} md={5} >
             <p>Git &amp; GitHub </p>
             <p>React</p>
             <p>Material UI (MUI)</p>

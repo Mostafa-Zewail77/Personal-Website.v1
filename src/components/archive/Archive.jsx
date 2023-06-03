@@ -4,7 +4,7 @@ import Loader from '../loader/Loader';
 import './Archive.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { FiGithub } from 'react-icons/fi';
+import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 import { BsArrowLeftShort } from 'react-icons/bs';
 
@@ -62,7 +62,7 @@ function Archive() {
         <Col xs={4} md={2}><h4>Date</h4></Col>
         <Col xs={6} md={5}><h4> Project</h4></Col>
         <Col md={4} className='d-none d-md-block'><h4> Topics</h4></Col>
-        <Col xs={1}><h4>Code </h4></Col>
+        <Col xs={1}><h4>Link </h4></Col>
       </Row>
       <hr/>
     
@@ -94,8 +94,13 @@ function Archive() {
                   </ul>
                 </Col>
 
-                <Col xs={1} className='links'>
-                  <a href={repo.html_url} target='_blank' rel="noopener noreferrer"> <FiGithub /></a>
+                <Col xs={1} className='links d-flex   '>
+                  <a className='me-1 me-md-3' href={repo.html_url} target='_blank' rel="noopener noreferrer"> <FiGithub /></a>
+                  {
+                    repo.homepage !== '' && repo.homepage !== null 
+                    ? (<a href={repo.homepage} target='_blank' rel="noopener noreferrer"><FiExternalLink /></a>) 
+                    : ( '' )
+                  }
                 </Col>
 
                 <hr/>
