@@ -94,11 +94,11 @@ function Archive() {
                   </ul>
                 </Col>
 
-                <Col xs={1} className='links d-flex   '>
-                  <a className='me-1 me-md-3' href={repo.html_url} target='_blank' rel="noopener noreferrer"> <FiGithub /></a>
+                <Col xs={1} className='links d-flex '>
+                  <a className='d-none d-md-block' href={repo.html_url} target='_blank' rel="noopener noreferrer"> <FiGithub /></a>
                   {
                     repo.homepage !== '' && repo.homepage !== null 
-                    ? (<a href={repo.homepage} target='_blank' rel="noopener noreferrer"><FiExternalLink /></a>) 
+                    ? (<a className='ms-1 ms-md-2' href={repo.homepage} target='_blank' rel="noopener noreferrer"><FiExternalLink /></a>) 
                     : ( '' )
                   }
                 </Col>
