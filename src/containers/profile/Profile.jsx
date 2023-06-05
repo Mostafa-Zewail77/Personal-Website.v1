@@ -15,9 +15,9 @@ function Profile({ avatar}) {
           </div>
           <div className=" text-center text-md-start">
             <h2>Mostafa Hassan</h2>
-            <p> I'm a front-end developer focused on creating visually appealing interfaces and delivering seamless user experiences.</p>
+            <p> I'm a front-end developer focused on creating visually appealing interfaces and delivering seamless user experiences.</p> 
             
-            <a href="https://drive.google.com/uc?export=download&id=1ho8EpcqJ9jySt8CxJ-PRgtWepBJAmzyp&confirm=no_antivirus&export?format=pdf"
+            <a href="https://drive.google.com/uc?export=download&id=1jOx7nBvVFNpfSGGmjB6oYIi-121s1NTN&confirm=no_antivirus&export?format=pdf"
               download="Mostafa_Hassan_Resume.pdf" >
               <button  className='custom-btn mt-1'>
                 Resume
