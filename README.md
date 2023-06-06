@@ -5,7 +5,7 @@ Welcome to my personal website! This repository contains the source code and fil
 ## Introduction
 This website serves as a platform to share information about myself, my skills, and the projects I have worked on. It is designed to provide visitors with an overview of my experience. The website is built using React, React Bootstrap, and it is hosted on Vercel.
 
-![2](https://github.com/Mostafa-Zewail77/Personal-Website.v1/assets/104537380/c5fa9b48-4999-48ea-8ee0-1ffad3d01d17)
+![2](https://github.com/Mostafa-Zewail77/Personal-Website.v1/assets/104537380/078266a8-4eaf-4113-8e80-fd5b7e8c517f)
 
 
 ## Features
