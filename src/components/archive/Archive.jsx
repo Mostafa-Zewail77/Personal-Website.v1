@@ -69,7 +69,7 @@ function Archive() {
     {data && (
       
         
-        data.filter((repo)=> repo.name !== 'Mostafa-Zewail77')
+        data.filter((repo)=> repo.name !== 'mostafahassan-dev')
           .sort((a, b) => {
             const dateA = new Date(a.created_at);
             const dateB = new Date(b.created_at);
@@ -78,7 +78,7 @@ function Archive() {
           .map((repo) => (
               <Row key={repo.id} className='align-item-start tb'>
                 <Col  xs={4} md={2} className='date'>
-                  <p> {`${monthNames[repo.created_at .slice(5, 7)]}-${repo.created_at.slice(0, 4)}`}</p>                  
+                  <p>{`${monthNames[repo.created_at.slice(5, 7)]}-${repo.created_at.slice(0, 4)}`}</p>                  
                 </Col>
 
                 <Col xs={6}  md={5} className='title'>

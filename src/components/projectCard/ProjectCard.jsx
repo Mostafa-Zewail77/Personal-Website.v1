@@ -9,7 +9,7 @@ function ProjectCard({title,description,image,tags,source,visit,id}) {
   return (
     <div className='custom-card' >
       <div className="img-box">
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading='lazy'/>
       </div>
       <div className="icons d-flex justify-content-between align-items-center mb-3">
         <CiFolderOn style={{
