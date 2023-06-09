@@ -69,8 +69,8 @@ export const projects = [
       description: "This is a simple HTML/CSS template for a personal portfolio website. It is a modern and visually appealing design with animations and transitions that make the website stand out.",
       image:animated,
       tags: ['HTML','CSS','JavaScript','Boxicons','Typed.js'],
-      source: 'https://github.com/mostafahassan-dev/Bondi-Template',
-      visit: 'https://mostafahassan-dev.github.io/Bondi-Template/',
+      source: 'https://github.com/mostafahassan-dev/Animated-Portfolio',
+      visit: 'https://mostafahassan-dev.github.io/Animated-Portfolio/',
       id: 6,
     },
     {
@@ -78,8 +78,8 @@ export const projects = [
       description: "Simple to-do list web application features a simple user interface that allows users to easily add and manage tasks. The application also provides a <span class='highlight'>progress bar that shows the percentage </span> of completed tasks. Additionally, the application includes <span class='highlight'>local storage<span> functionality",
       image:todo,
       tags: ['HTML','CSS','JavaScript'],
-      source: 'https://github.com/mostafahassan-dev/Bondi-Template',
-      visit: 'https://mostafahassan-dev.github.io/Bondi-Template/',
+      source: 'https://github.com/mostafahassan-dev/To-Do-List',
+      visit: 'https://mostafahassan-dev.github.io/To-Do-List/',
       id: 7,
     },
     
