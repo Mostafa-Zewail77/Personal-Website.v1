@@ -6,6 +6,7 @@ import gericht from '../assets/gericht-restaurant.png'
 import gpt from '../assets/gpt-3.png'
 import todo from '../assets/to-do-list.png'
 import crud from '../assets/crud.jpg'
+import special from '../assets/special.png'
 
 
 
@@ -62,6 +63,15 @@ export const projects = [
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/cruds-oprations',
       visit: 'https://mostafahassan-dev.github.io/cruds-oprations/',
+      id: 5,
+    },
+    {
+      title: 'Special Design',
+      description: "A responsive website for a fictional agency using Vanilla JavaScript, and advanced CSS techniques including CSS Grid and Flexbox.The project features a visually appealing user interface with interactive design elements.",
+      image: special,
+      tags: ['HTML','CSS','Vanilla JavaScript'],
+      source: 'https://github.com/mostafahassan-dev/Special-Design',
+      visit: 'https://mostafahassan-dev.github.io/Special-Design/',
       id: 5,
     },
     {
