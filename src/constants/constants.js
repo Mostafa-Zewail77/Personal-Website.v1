@@ -71,7 +71,7 @@ export const projects = [
       image: special,
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/Special-Design',
-      visit: 'https://mostafahassan-dev.github.io/Special-Design/',
+      visit: 'https://specialdesign.vercel.app/',
       id: 5,
     },
     {
