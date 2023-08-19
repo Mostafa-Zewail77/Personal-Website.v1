@@ -12,22 +12,13 @@ import streamit from '../assets/streamit.png'
 
 export const projects = [
     {
-      title: 'Streamit',
-      description: "A Responsive React Movies App with a sleek UI and clean design.It allows users to browse and view movie details, and enjoy a seamless movie-watching experience.",
-      image:streamit,
-      tags: ['CSS','React', 'Vercel '],
-      source: 'https://github.com/mostafahassan-dev/Streamit',
-      visit: 'https://streamit-app.vercel.app',
-      id: 0,
-    },
-    {
       title: 'YouTube Clone',
       description: "Built a functional YouTube clone with a custom user interface similar to the original using <span class='highlight'>React and Material UI</span>. Developed stunning video sections, custom categories, channel pages, and a custom video player component that allows users to watch and control videos, including play, pause, and seek functionalities.",
       image:youtube,
       tags: ['React', 'Material UI', 'Axios', 'RapidAPI','Vercel '],
       source: 'https://github.com/mostafahassan-dev/YouTube-clone',
       visit: 'https://youtube-clone-mz7.vercel.app/',
-      id: 1,
+      id: 0,
     },
     {
       title: 'E-Store',
@@ -36,6 +27,15 @@ export const projects = [
       tags: ['React','Material UI','Commerce.js','Stripe','Vercel '],
       source: 'https://github.com/mostafahassan-dev/E-Store',
       visit: 'https://e-store-mz7.vercel.app/',
+      id: 1,
+    },
+    {
+      title: 'Streamit',
+      description: "A Responsive React Movies App with a sleek UI and clean design.It allows users to browse and view movie details, and enjoy a seamless movie-watching experience.",
+      image:streamit,
+      tags: ['CSS','React', 'Vercel '],
+      source: 'https://github.com/mostafahassan-dev/Streamit',
+      visit: 'https://streamit-app.vercel.app',
       id: 2,
     },
     {
