@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { fetchFromAPI } from '../../utils/fetchFromAPI';
-import Loader from '../loader/Loader';
 import './Archive.css'
 import { Col, Container, Row } from 'react-bootstrap';
+import Loader from '../loader/Loader';
 import { Link } from 'react-router-dom';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-
 import { BsArrowLeftShort } from 'react-icons/bs';
 
 
@@ -24,8 +22,8 @@ const monthNames = {
   '12': 'Dec',
 };
 
-function Archive() {
-  const [data, setData] = useState(null);
+function Archive({data}) {
+  
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -35,18 +33,8 @@ function Archive() {
     }, 700);
   }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      
-        const data = await fetchFromAPI();
-        setData(data);
-      
-    };
-
-    fetchData();
-  }, []);
-
   if (loading) return <Loader />;
+
   return (
     <Container className='archive section__padding'>
        <Link to="/" className='back-link d-inline-block ' aria-label="back">
@@ -99,7 +87,7 @@ function Archive() {
                   {
                     repo.homepage !== '' && repo.homepage !== null 
                     ? (<a className='ms-1 ms-md-2' href={repo.homepage} target='_blank' rel="noopener noreferrer"><FiExternalLink /></a>) 
-                    : ( '' )
+                    : (<a className='ms-1 ms-md-2 d-md-none' href={repo.html_url} target='_blank' rel="noopener noreferrer"> <FiGithub /></a> )
                   }
                 </Col>
 

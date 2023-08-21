@@ -1,3 +1,4 @@
+export {default as Layout} from './layout/Layout'
 export {default as Profile} from './profile/Profile'
 export {default as About} from './about/About'
 export {default as Projects} from './projects/Projects'

@@ -1,0 +1,30 @@
+import React from 'react'
+
+import { About, Contact, Footer, Profile, Projects } from '../../containers';
+import {  Corner } from '../../components';
+import { Col, Container, Row } from 'react-bootstrap';
+
+
+function Layout({data}) {
+
+  return (
+    <Container>
+          <Corner githubURL= {data[0].owner.html_url }/>
+          <Row className='d-flex justify-content-between'>
+            <Col lg={5} >
+              <Profile avatar={data[0].owner.avatar_url } /> 
+            </Col>
+
+            <Col lg={7}>
+              <About/>
+              <Projects/>
+              <Contact/>
+              <Footer/>
+            </Col>
+          </Row>
+          
+    </Container>
+  )
+}
+
+export default Layout;

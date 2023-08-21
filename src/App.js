@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import { Corner, Loader } from './components';
-import { About, Contact, Footer, Profile, Projects } from './containers';
 import "./App.css"
-import { Col, Container, Row } from 'react-bootstrap';
+import {Layout}  from './containers';
+import { Archive, Loader } from './components';
 import {fetchFromAPI} from './utils/fetchFromAPI';
+import { Route, Routes } from 'react-router-dom';
 
 
 
@@ -33,22 +33,11 @@ if (!data) return <Loader/>
       { loading 
       ? (<Loader/>) 
       : (
-        <Container>
-          <Corner githubURL= {data[0].owner.html_url }/>
-          <Row className='d-flex justify-content-between'>
-            <Col lg={5} >
-              <Profile avatar={data[0].owner.avatar_url } /> 
-            </Col>
-
-            <Col lg={7}>
-              <About/>
-              <Projects/>
-              <Contact/>
-              <Footer/>
-            </Col>
-          </Row>
-          
-        </Container>
+        
+        <Routes>
+          <Route path="/" element={<Layout data={data} />} />
+          <Route path="/archive" element={<Archive data={data}/>} />
+        </Routes>
       )
       }
 
