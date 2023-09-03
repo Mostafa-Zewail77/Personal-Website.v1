@@ -17,7 +17,7 @@ export const projects = [
       image:youtube,
       tags: ['React', 'Material UI', 'Axios', 'RapidAPI','Vercel '],
       source: 'https://github.com/mostafahassan-dev/YouTube-clone',
-      visit: 'https://youtube-clone-mz7.vercel.app/',
+      visit: 'https://youtubeclone-dev.vercel.app',
       id: 0,
     },
     {
@@ -26,7 +26,7 @@ export const projects = [
       image: store,
       tags: ['React','Material UI','Commerce.js','Stripe','Vercel '],
       source: 'https://github.com/mostafahassan-dev/E-Store',
-      visit: 'https://e-store-mz7.vercel.app/',
+      visit: 'https://e-store-dev.vercel.app',
       id: 1,
     },
     {
@@ -44,7 +44,7 @@ export const projects = [
       image: gericht,
       tags: ['CSS',' React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Gericht-Restaurant',
-      visit: 'https://gericht-restaurant-mz7.vercel.app/',
+      visit: 'https://gericht-restaurant-dev.vercel.app',
       id: 3,
     },
     {
@@ -53,7 +53,7 @@ export const projects = [
       image:gpt,
       tags: ['CSS','React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/GPT3',
-      visit: 'https://gpt-3-mh7.vercel.app/',
+      visit: 'https://gpt3-dev.vercel.app',
       id: 4,
     },
     {
