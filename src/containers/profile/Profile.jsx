@@ -31,7 +31,7 @@ function Profile({ avatar}) {
       <Row className="links mt-4 max-width d-none d-md-flex ">
         <Col xs={2}> <a href='https://www.linkedin.com/in/mostafahassan-dev/'target='_blank' rel='noopener noreferrer'> <BsLinkedin title='LinkedIn'/></a> </Col>
         <Col xs={2}> <a href='https://github.com/mostafahassan-dev' target='_blank'rel='noopener noreferrer' > <BsGithub title='GitHub'/></a> </Col>
-        <Col xs={2}> <a href='https://www.instagram.com/mustafa_hassan77/'target='_blank' rel='noopener noreferrer'> <BsInstagram title='Instagram'/></a> </Col>      
+        <Col xs={2}> <a href='https://www.instagram.com/mostafahassan.dev/'target='_blank' rel='noopener noreferrer'> <BsInstagram title='Instagram'/></a> </Col>      
         <Col xs={2}> <a href='https://www.facebook.com/profile.php?id=100006284646611'target='_blank' rel='noopener noreferrer'> <BsFacebook title='Facebook'/></a> </Col>      
       </Row>
   
