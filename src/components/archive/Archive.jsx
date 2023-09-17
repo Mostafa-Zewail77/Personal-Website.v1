@@ -40,7 +40,7 @@ function Archive({data}) {
        <Link to="/" className='back-link d-inline-block ' aria-label="back">
           <BsArrowLeftShort className='arrow' /> <span>Mostafa Hassan</span>
         </Link>
-        <div className="archive-header my-3">
+        <div className="archive-header pb-3">
           <h1 >Archive</h1>
           <p>A big list of Repos I’ve worked on</p>
         </div>

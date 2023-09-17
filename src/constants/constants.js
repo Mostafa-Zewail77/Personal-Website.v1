@@ -8,6 +8,7 @@ import todo from '../assets/to-do-list.png'
 import crud from '../assets/crud.jpg'
 import special from '../assets/special.png'
 import streamit from '../assets/streamit.png'
+import nike from '../assets/nike.png'
 
 
 export const projects = [
@@ -39,13 +40,22 @@ export const projects = [
       id: 2,
     },
     {
+      title: 'Nike',
+      description: "A responsive landing page featuring a modern and visually appealing user interface. This project serves as a multipurpose template that can be customized to suit various purposes. If you are seeking a modern web presence, you can easily adapt this landing page to your unique needs.",
+      image: nike,
+      tags: ['React','Tailwind CSS','Vite','Vercel '],
+      source: 'https://github.com/mostafahassan-dev/Nike-Landing-Page',
+      visit: 'https://nike--landing-page.vercel.app/',
+      id: 3,
+    },
+    {
       title: 'Gericht Restaurant',
       description: "A fully Responsive Website for Gericht Restaurant that reflects the restaurant's branding and visual identity using React and custom CSS to enhance the website's visual appeal.",
       image: gericht,
       tags: ['CSS',' React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Gericht-Restaurant',
       visit: 'https://gericht-restaurant-dev.vercel.app',
-      id: 3,
+      id: 4,
     },
     {
       title: 'GPT-3',
@@ -54,7 +64,7 @@ export const projects = [
       tags: ['CSS','React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/GPT3',
       visit: 'https://gpt3-dev.vercel.app',
-      id: 4,
+      id: 5,
     },
     {
       title: 'Bondi',
@@ -63,7 +73,7 @@ export const projects = [
       tags: ['HTML','CSS','Bootstrap '],
       source: 'https://github.com/mostafahassan-dev/Bondi-Template',
       visit: 'https://mostafahassan-dev.github.io/Bondi-Template/',
-      id: 5,
+      id: 6,
     },
     {
       title: ' Product Management System',
@@ -72,7 +82,7 @@ export const projects = [
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/cruds-oprations',
       visit: 'https://mostafahassan-dev.github.io/cruds-oprations/',
-      id: 6,
+      id: 7,
     },
     {
       title: 'Special Design',
@@ -81,17 +91,17 @@ export const projects = [
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/Special-Design',
       visit: 'https://specialdesign.vercel.app/',
-      id: 7,
-    },
-    {
-      title: 'Animated Portfolio',
-      description: "This is a simple HTML/CSS template for a personal portfolio website. It is a modern and visually appealing design with animations and transitions that make the website stand out.",
-      image:animated,
-      tags: ['HTML','CSS','JavaScript','Boxicons','Typed.js'],
-      source: 'https://github.com/mostafahassan-dev/Animated-Portfolio',
-      visit: 'https://mostafahassan-dev.github.io/Animated-Portfolio/',
       id: 8,
     },
+    // {
+    //   title: 'Animated Portfolio',
+    //   description: "This is a simple HTML/CSS template for a personal portfolio website. It is a modern and visually appealing design with animations and transitions that make the website stand out.",
+    //   image:animated,
+    //   tags: ['HTML','CSS','JavaScript','Boxicons','Typed.js'],
+    //   source: 'https://github.com/mostafahassan-dev/Animated-Portfolio',
+    //   visit: 'https://mostafahassan-dev.github.io/Animated-Portfolio/',
+    //   id: 8,
+    // },
     {
       title: 'To-Do List',
       description: "Simple to-do list web application features a simple user interface that allows users to easily add and manage tasks. The application also provides a <span class='highlight'>progress bar that shows the percentage </span> of completed tasks. Additionally, the application includes <span class='highlight'>local storage<span> functionality",

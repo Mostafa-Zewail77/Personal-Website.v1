@@ -20,13 +20,15 @@ function About() {
         <p> Here are some technologies I’ve been working with:</p>
         <Row className=' techs pe-md-5'>
           <Col xs={6} md={5}>
-            <p>HTML &amp; CSS</p>
+            {/* <p>HTML &amp; CSS</p> */}
             <p>JavaScript (ES6+)</p>
-            <p>Bootstrap</p>
+            <p>React</p>
+            <p>Next.js</p>
           </Col>
           <Col xs={6} md={5} >
-            <p>Git &amp; GitHub </p>
-            <p>React</p>
+            {/* <p>Git &amp; GitHub </p> */}
+            <p>Bootstrap</p>
+            <p>Tailwind CSS</p>
             <p>Material UI (MUI)</p>
           </Col>
         </Row>
