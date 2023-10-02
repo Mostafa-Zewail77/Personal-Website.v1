@@ -13,7 +13,6 @@ function MyNav() {
               activeClass="active"
               className="nav-link"
               to="about"
-              // href='#about'
               spy={true}
               smooth={true}
               duration={50}
@@ -26,7 +25,6 @@ function MyNav() {
               activeClass="active"
               className="nav-link"
               to="projects"
-              // href='#projects'
               spy={true}
               smooth={true}
               duration={50}
@@ -38,7 +36,6 @@ function MyNav() {
               activeClass="active"
               className="nav-link"
               to="contact"
-              // href='#contact'
               spy={true}
               smooth={true}
               duration={50}

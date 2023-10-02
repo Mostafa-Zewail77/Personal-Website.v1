@@ -17,7 +17,7 @@ function Profile({ avatar}) {
             <h2>Mostafa Hassan</h2>
             <p> I'm a front-end developer focused on creating visually appealing interfaces and delivering seamless user experiences.</p> 
             
-            <a href="https://drive.google.com/uc?export=download&id=12LCU7pmdWP1R5wmvoZnxwgXdRrr3YFtH&confirm=no_antivirus&export?format=pdf"
+            <a href="https://drive.google.com/uc?export=download&id=15kFak7A4UtwNMOVBjF9UENkRjYJB7oUX&confirm=no_antivirus&export?format=pdf"
               download="Mostafa_Hassan_Resume.pdf" >
               <button  className='custom-btn mt-1'>
                 Resume
