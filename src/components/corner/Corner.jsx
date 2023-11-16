@@ -2,12 +2,12 @@ import React from 'react'
 import './Corner.css'; 
 
 
-function Corner({githubURL}) {
+function Corner() {
   return (
 
     <a
       className="github-corner"
-      href={githubURL}
+      href='https://github.com/mostafahassan-dev/Personal-Website.v1'
       target="_blank"
       rel='noopener'
     >        

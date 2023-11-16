@@ -9,8 +9,8 @@ function Layout({data}) {
 
   return (
     <Container>
-          <Corner githubURL= {data[0].owner.html_url }/>
-          <Row className='d-flex justify-content-between'>
+          <Corner/>
+          <Row>
             <Col lg={5} >
               <Profile avatar={data[0].owner.avatar_url } /> 
             </Col>
