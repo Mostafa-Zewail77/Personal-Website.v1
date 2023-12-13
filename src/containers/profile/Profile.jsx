@@ -11,7 +11,7 @@ function Profile({ avatar}) {
       <Row className='mt-5 mt-lg-0'>
         <Col className="pe-4 pe-lg-0 d-flex flex-column flex-md-row-reverse align-items-center justify-content-between flex-lg-column align-items-lg-start ">
           <div className="avatar me-md-5 ">
-            <img src={avatar} alt="avatar" />
+            <img src={avatar} alt="avatar"  width='100%' height='100%' />
           </div>
           <div className=" text-center text-md-start">
             <h2>Mostafa Hassan</h2>
