@@ -19,8 +19,8 @@ function ProjectCard({title,description,image,tags,source,visit,id}) {
           }} />
           
         <div className="links ">
-          <a className='me-3' href={source} target='_blank' rel='noopener noreferrer' ><FiGithub alt="View source code on Github" /></a>
-          <a href={visit} target='_blank' rel='noopener noreferrer' ><FiExternalLink alt="View live demo" /> </a>
+          <a className='me-3' href={source} target='_blank' rel='noopener noreferrer' ><FiGithub/></a>
+          <a href={visit} target='_blank' rel='noopener noreferrer' ><FiExternalLink/></a>
         </div>
       </div>
       <div className="info ">
