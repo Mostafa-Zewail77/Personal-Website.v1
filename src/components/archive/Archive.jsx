@@ -30,7 +30,7 @@ function Archive({data}) {
     
     setTimeout(() => {
       setLoading(false);
-    }, 700);
+    }, 500);
   }, []);
 
   if (loading) return <Loader />;
