@@ -9,6 +9,7 @@ import crud from '../assets/crud.webp'
 import special from '../assets/special.webp'
 import streamit from '../assets/streamit.webp'
 import nike from '../assets/nike.webp'
+import botify from '../assets/Botify-ai.webp'
 
 
 export const projects = [
@@ -31,22 +32,31 @@ export const projects = [
       id: 1,
     },
     {
-      title: 'Streamit',
-      description: "A Responsive React Movies App with a sleek UI and clean design.It allows users to browse and view movie details, and enjoy a seamless movie-watching experience.",
-      image:streamit,
-      tags: ['CSS','React', 'Vercel '],
-      source: 'https://github.com/mostafahassan-dev/Streamit',
-      visit: 'https://streamit-app.vercel.app',
+      title: 'Botify',
+      description: "Botify is a simple chat application that uses a GPT-3.5 Turbo model from OpenAI to generate responses based on user prompts. The application is built using JavaScript, Express for the server, and a basic HTML/CSS/JS setup for the client.",
+      image: botify,
+      tags: ['Vanilla JavaScript','Express','Vite','OpenAI','Vercel '],
+      source: 'https://github.com/mostafahassan-dev/Botify',
+      visit: 'https://botify-ai.vercel.app',
       id: 2,
     },
     {
       title: 'Nike',
-      description: "A responsive landing page featuring a modern and visually appealing user interface. This project serves as a multipurpose template that can be customized to suit various purposes. If you are seeking a modern web presence, you can easily adapt this landing page to your unique needs.",
+      description: "A responsive landing page featuring a modern and visually appealing user interface. This project serves as a <span class='highlight'>multipurpose template</span> that can be customized to suit various purposes. If you are seeking a modern web presence, you can easily adapt this landing page to your unique needs.",
       image: nike,
       tags: ['React','Tailwind CSS','Vite','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Nike-Landing-Page',
       visit: 'https://nike--landing-page.vercel.app/',
       id: 3,
+    },
+    {
+      title: 'Streamit',
+      description: "A Responsive React Movies App with a sleek UI and clean design.It allows users to browse and view movie details, and enjoy a seamless movie-watching experience.",
+      image: streamit,
+      tags: ['CSS','React', 'Vercel '],
+      source: 'https://github.com/mostafahassan-dev/Streamit',
+      visit: 'https://streamit-app.vercel.app',
+      id: 4,
     },
     {
       title: 'Gericht Restaurant',
@@ -55,7 +65,7 @@ export const projects = [
       tags: ['CSS',' React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Gericht-Restaurant',
       visit: 'https://gericht-restaurant-dev.vercel.app',
-      id: 4,
+      id: 5,
     },
     {
       title: 'GPT-3',
@@ -64,7 +74,7 @@ export const projects = [
       tags: ['CSS','React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/GPT3',
       visit: 'https://gpt3-dev.vercel.app',
-      id: 5,
+      id: 6,
     },
     {
       title: 'Bondi',
@@ -73,7 +83,7 @@ export const projects = [
       tags: ['HTML','CSS','Bootstrap '],
       source: 'https://github.com/mostafahassan-dev/Bondi-Template',
       visit: 'https://mostafahassan-dev.github.io/Bondi-Template/',
-      id: 6,
+      id: 7,
     },
     {
       title: ' Product Management System',
@@ -82,7 +92,7 @@ export const projects = [
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/cruds-oprations',
       visit: 'https://mostafahassan-dev.github.io/cruds-oprations/',
-      id: 7,
+      id: 8,
     },
     {
       title: 'Special Design',
@@ -91,7 +101,7 @@ export const projects = [
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/Special-Design',
       visit: 'https://specialdesign.vercel.app/',
-      id: 8,
+      id: 9,
     },
     // {
     //   title: 'Animated Portfolio',
@@ -109,7 +119,7 @@ export const projects = [
       tags: ['HTML','CSS','JavaScript'],
       source: 'https://github.com/mostafahassan-dev/To-Do-List',
       visit: 'https://mostafahassan-dev.github.io/To-Do-List/',
-      id: 9,
+      id: 10,
     },
     
   ];
