@@ -2,8 +2,7 @@
     color: var(--color-text);
     font-size: var(--fs-md);
     font-weight: 500;
-    
-    
+    line-height: 1.5;    
 }
 
 .techs p{
@@ -14,7 +13,6 @@
     font-size: clamp(var(--fs-xxs),3vw,var(--fs-xs));
     margin: 0;
     margin-bottom: 7px;
-
 }
 
 .techs p::before{

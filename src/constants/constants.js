@@ -114,7 +114,7 @@ export const projects = [
     // },
     {
       title: 'To-Do List',
-      description: "Simple to-do list web application features a simple user interface that allows users to easily add and manage tasks. The application also provides a <span class='highlight'>progress bar that shows the percentage </span> of completed tasks. Additionally, the application includes <span class='highlight'>local storage<span> functionality",
+      description: "Simple to-do list web application features a simple user interface that allows users to easily add and manage tasks. The application also provides a <span class='highlight'>progress bar</span> that shows the percentage of completed tasks. Additionally, the application includes <span class='highlight'>local storage</span> functionality",
       image:todo,
       tags: ['HTML','CSS','JavaScript'],
       source: 'https://github.com/mostafahassan-dev/To-Do-List',

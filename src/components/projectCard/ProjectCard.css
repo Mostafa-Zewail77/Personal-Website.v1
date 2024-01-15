@@ -51,17 +51,20 @@
 .custom-card .info h3{
     color: var(--color-heading);
     font-size: var(--fs-lg);
-    font-weight: 600;
+    font-weight: 700;
 }
 .custom-card .info:hover h3{
     color: var(--color-green);
 }
 
 .custom-card .info p{
-    color: var(--color-light);
+    color: var(--color-text);
     font-size: var(--fs-sm);
     padding: 5px 0;
-    line-height: 1.5
+    line-height: 1.5;
+    font-weight: 500;
+    word-spacing: .25px;
+    
 }
 
 .tags ul li{
