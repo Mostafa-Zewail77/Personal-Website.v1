@@ -9,7 +9,7 @@ import crud from '../assets/crud.webp'
 import special from '../assets/special.webp'
 import streamit from '../assets/streamit.webp'
 import nike from '../assets/nike.webp'
-import botify from '../assets/Botify-ai.webp'
+import botify from '../assets/botify-ai.webp'
 
 
 export const projects = [
