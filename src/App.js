@@ -9,7 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const [data, setData] = useState(false);
+  const [data, setData] = useState(null);
 
   useEffect(() => {
     
@@ -20,8 +20,13 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const data = await fetchFromAPI();
-      setData(data);
+      try {
+        const data = await fetchFromAPI();
+        setData(data);
+        
+      } catch (error) {
+        console.log('Error fetching data:',error);
+      }
     };
 
     fetchData();
