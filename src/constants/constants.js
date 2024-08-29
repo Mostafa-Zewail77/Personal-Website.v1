@@ -3,16 +3,26 @@ import youtube from '../assets/youtube-clone.webp'
 import bondi from '../assets/bondi.webp'
 import store from '../assets/e-store.webp'
 import gericht from '../assets/gericht-restaurant.webp'
-import gpt from '../assets/gpt-3.webp'
-import todo from '../assets/to-do-list.webp'
+// import gpt from '../assets/gpt-3.webp'
+// import todo from '../assets/to-do-list.webp'
 import crud from '../assets/crud.webp'
 import special from '../assets/special.webp'
 import streamit from '../assets/streamit.webp'
 import nike from '../assets/nike.webp'
-import botify from '../assets/botify-ai.webp'
+// import botify from '../assets/botify-ai.webp'
+import stayHealthy from '../assets/stayHealthy.webp'
 
 
 export const projects = [
+    {
+      title: 'StayHealthy',
+      description:'Designed and developed a Medical Appointment platform to seamlessly connect patients with doctors for consultations and prescriptions. Features include secure user authentication, appointment booking, doctor listings, profile management, and access to medical records.' ,
+      image: stayHealthy,
+      tags: ['React','Vite','Express', 'MongoDB', 'Railway','Vercel '],
+      source: 'https://github.com/mostafahassan-dev/StayHealthy',
+      visit: 'https://stayhealthy-app.vercel.app/',
+      id: 0,
+    },
     {
       title: 'YouTube Clone',
       description: "Built a functional YouTube clone with a custom user interface similar to the original using <span class='highlight'>React and Material UI</span>. Developed stunning video sections, custom categories, channel pages, and a custom video player component that allows users to watch and control videos, including play, pause, and seek functionalities.",
@@ -20,7 +30,7 @@ export const projects = [
       tags: ['React', 'Material UI', 'Axios', 'RapidAPI','Vercel '],
       source: 'https://github.com/mostafahassan-dev/YouTube-clone',
       visit: 'https://youtubeclone-dev.vercel.app',
-      id: 0,
+      id: 1,
     },
     {
       title: 'E-Store',
@@ -29,17 +39,17 @@ export const projects = [
       tags: ['React','Material UI','Commerce.js','Stripe','Vercel '],
       source: 'https://github.com/mostafahassan-dev/E-Store',
       visit: 'https://e-store-dev.vercel.app',
-      id: 1,
-    },
-    {
-      title: 'Botify',
-      description: "Botify is a simple chat application that uses a GPT-3.5 Turbo model from OpenAI to generate responses based on user prompts. The application is built using JavaScript, Express for the server, and a basic HTML/CSS/JS setup for the client.",
-      image: botify,
-      tags: ['Vanilla JavaScript','Express','Vite','OpenAI','Vercel '],
-      source: 'https://github.com/mostafahassan-dev/Botify',
-      visit: 'https://botify-ai.vercel.app',
       id: 2,
     },
+    // {
+    //   title: 'Botify',
+    //   description: "Botify is a simple chat application that uses a GPT-3.5 Turbo model from OpenAI to generate responses based on user prompts. The application is built using JavaScript, Express for the server, and a basic HTML/CSS/JS setup for the client.",
+    //   image: botify,
+    //   tags: ['Vanilla JavaScript','Express','Vite','OpenAI','Vercel '],
+    //   source: 'https://github.com/mostafahassan-dev/Botify',
+    //   visit: 'https://botify-ai.vercel.app',
+    //   id: 3,
+    // },
     {
       title: 'Nike',
       description: "A responsive landing page featuring a modern and visually appealing user interface. This project serves as a <span class='highlight'>multipurpose template</span> that can be customized to suit various purposes. If you are seeking a modern web presence, you can easily adapt this landing page to your unique needs.",
@@ -47,7 +57,7 @@ export const projects = [
       tags: ['React','Tailwind CSS','Vite','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Nike-Landing-Page',
       visit: 'https://nike--landing-page.vercel.app/',
-      id: 3,
+      id: 4,
     },
     {
       title: 'Streamit',
@@ -56,7 +66,7 @@ export const projects = [
       tags: ['CSS','React', 'Vercel '],
       source: 'https://github.com/mostafahassan-dev/Streamit',
       visit: 'https://streamit-app.vercel.app',
-      id: 4,
+      id: 5,
     },
     {
       title: 'Gericht Restaurant',
@@ -65,17 +75,17 @@ export const projects = [
       tags: ['CSS',' React','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Gericht-Restaurant',
       visit: 'https://gericht-restaurant-dev.vercel.app',
-      id: 5,
-    },
-    {
-      title: 'GPT-3',
-      description: "A landing page using React for the GPT-3 language model, showcasing its capabilities and features. The landing page includes a responsive design, interactive sections, and clear call-to-actions.",
-      image:gpt,
-      tags: ['CSS','React','Vercel '],
-      source: 'https://github.com/mostafahassan-dev/GPT3',
-      visit: 'https://gpt3-dev.vercel.app',
       id: 6,
     },
+    // {
+    //   title: 'GPT-3',
+    //   description: "A landing page using React for the GPT-3 language model, showcasing its capabilities and features. The landing page includes a responsive design, interactive sections, and clear call-to-actions.",
+    //   image:gpt,
+    //   tags: ['CSS','React','Vercel '],
+    //   source: 'https://github.com/mostafahassan-dev/GPT3',
+    //   visit: 'https://gpt3-dev.vercel.app',
+    //   id: 7,
+    // },
     {
       title: 'Bondi',
       description: "Bondi is a creative, colorful landing page for a single author or small agency. It provides a clean and minimalistic layout that highlights your content and allows visitors to focus on your work. The template is fully responsive and optimized for various screen sizes, ensuring that your website looks great on any device.",
@@ -83,16 +93,16 @@ export const projects = [
       tags: ['HTML','CSS','Bootstrap '],
       source: 'https://github.com/mostafahassan-dev/Bondi-Template',
       visit: 'https://mostafahassan-dev.github.io/Bondi-Template/',
-      id: 7,
+      id: 8,
     },
     {
       title: ' Product Management System',
-      description: "A web application for efficiently managing customer data.  The application features a static layout created with HTML and CSS, alongside JavaScript functions to handle data. Implemented <span class='highlight'>CRUD</span> operations, including adding, updating, and deleting customer records",
+      description: "A web application for efficiently managing customer data.The application features a static layout created with HTML and CSS, alongside JavaScript functions to handle data. Implemented <span class='highlight'>CRUD</span> operations, including adding, updating, and deleting customer records",
       image: crud,
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/cruds-oprations',
       visit: 'https://mostafahassan-dev.github.io/cruds-oprations/',
-      id: 8,
+      id: 9,
     },
     {
       title: 'Special Design',
@@ -101,7 +111,7 @@ export const projects = [
       tags: ['HTML','CSS','Vanilla JavaScript'],
       source: 'https://github.com/mostafahassan-dev/Special-Design',
       visit: 'https://specialdesign.vercel.app/',
-      id: 9,
+      id: 10,
     },
     // {
     //   title: 'Animated Portfolio',
@@ -112,14 +122,14 @@ export const projects = [
     //   visit: 'https://mostafahassan-dev.github.io/Animated-Portfolio/',
     //   id: 8,
     // },
-    {
-      title: 'To-Do List',
-      description: "Simple to-do list web application features a simple user interface that allows users to easily add and manage tasks. The application also provides a <span class='highlight'>progress bar</span> that shows the percentage of completed tasks. Additionally, the application includes <span class='highlight'>local storage</span> functionality",
-      image:todo,
-      tags: ['HTML','CSS','JavaScript'],
-      source: 'https://github.com/mostafahassan-dev/To-Do-List',
-      visit: 'https://mostafahassan-dev.github.io/To-Do-List/',
-      id: 10,
-    },
+    // {
+    //   title: 'To-Do List',
+    //   description: "Simple to-do list web application features a simple user interface that allows users to easily add and manage tasks. The application also provides a <span class='highlight'>progress bar</span> that shows the percentage of completed tasks. Additionally, the application includes <span class='highlight'>local storage</span> functionality",
+    //   image:todo,
+    //   tags: ['HTML','CSS','JavaScript'],
+    //   source: 'https://github.com/mostafahassan-dev/To-Do-List',
+    //   visit: 'https://mostafahassan-dev.github.io/To-Do-List/',
+    //   id: 11,
+    // },
     
   ];
