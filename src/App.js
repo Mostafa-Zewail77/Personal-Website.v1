@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import "./App.css"
 import {Layout}  from './containers';
-import { Archive, Loader } from './components';
+import { Archive, Loader, Portfolio } from './components';
 import {fetchFromAPI} from './utils/fetchFromAPI';
 import { Route, Routes } from 'react-router-dom';
 
@@ -42,6 +42,7 @@ if (!data) return <Loader/>
         <Routes>
           <Route path="/" element={<Layout data={data} />} />
           <Route path="/archive" element={<Archive data={data}/>} />
+          <Route path='/portfolio' element={<Portfolio/>} />
         </Routes>
       )
       }

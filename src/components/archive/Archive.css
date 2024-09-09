@@ -1,7 +1,6 @@
 .back-link{
     color: var(--color-heading) !important;
     font-weight: bold;
-    font-size: clamp(var(--fs-md),5vw,var(--fs-lg));
 }
 
 .back-link:hover span{
@@ -18,6 +17,7 @@
     font-size: 70px;
     font-weight: bold;
     color: var(--color-heading);
+    line-height: 1.1;   
 }
 
 .archive-header p{
@@ -42,7 +42,7 @@
 .tb .title p{
    font-size:  clamp(var(--fs-md),5vw,var(--fs-lg));
    font-weight: bold;
-   color: var(--color-light);
+   color: var(--color-heading);
    margin-bottom: 5px;
    text-transform: capitalize;
 }

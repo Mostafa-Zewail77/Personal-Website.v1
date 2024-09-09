@@ -45,6 +45,10 @@ a, a:hover {
     
 }
 
+.custom-btn:focus{
+    outline: none;
+}
+
 .custom-btn:hover{
     background-color: var(--color-hover)
 }
@@ -73,6 +77,29 @@ a, a:hover {
 
 .max-width{
     max-width: 280px;
+}
+
+.custom-link{
+    
+  color: var( --color-heading)!important ;
+  white-space: nowrap;
+  font-weight:bold;
+  
+  
+  
+}
+
+.arrow{
+  font-weight: normal;
+  width: 25px;
+  height: 25px;
+  
+}
+
+.custom-link:hover span{
+  border-bottom: 1px solid var(--color-green);
+  margin-right: 8px ;
+  transition: 0.2s;
 }
 
 @media screen and (max-width: 768px){

@@ -37,23 +37,23 @@ function Archive({data}) {
 
   return (
     <Container className='archive section__padding'>
-       <Link to="/" className='back-link d-inline-block ' aria-label="back">
-          <BsArrowLeftShort className='arrow' /> <span>Mostafa Hassan</span>
-        </Link>
-        <div className="archive-header pb-3">
-          <h1 >Archive</h1>
+       
+        <div className="archive-header pb-3 ">
+          <Link to="/" className='back-link d-inline-block' aria-label="back">
+            <BsArrowLeftShort className='arrow' /> <span>Mostafa Hassan</span>
+          </Link>
+          <h1 className='mb-3'>Archive</h1>
           <p>A big list of Repos I’ve worked on</p>
         </div>
        
         
-      <Row className='mt-5 th'>
+      <Row className='mt-5 py-2 th'>
         <Col xs={4} md={2}><h4>Date</h4></Col>
         <Col xs={6} md={5}><h4> Project</h4></Col>
         <Col md={4} className='d-none d-md-block'><h4> Topics</h4></Col>
         <Col xs={1}><h4>Link </h4></Col>
       </Row>
-      <hr/>
-    
+      <div style={{height:'1px',background:'var(--color-divider)',opacity:'0.5'}}/>
     {data && (
       
         
@@ -64,7 +64,7 @@ function Archive({data}) {
             return dateB - dateA;
           })
           .map((repo) => (
-              <Row key={repo.id} className='align-item-start tb'>
+              <Row key={repo.id} className='align-item-start py-2 tb'>
                 <Col  xs={4} md={2} className='date'>
                   <p>{`${monthNames[repo.created_at.slice(5, 7)]}-${repo.created_at.slice(0, 4)}`}</p>                  
                 </Col>
@@ -91,7 +91,8 @@ function Archive({data}) {
                   }
                 </Col>
 
-                <hr/>
+                <div style={{height:'1px',background:'var(--color-divider)',opacity:'0.5'}}/>
+
               </Row>
               
           ))

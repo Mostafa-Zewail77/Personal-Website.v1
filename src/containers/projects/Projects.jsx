@@ -4,15 +4,15 @@ import { Heading, ProjectCard } from '../../components'
 import { Col,  Collapse,  Container,  Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import {BsArrowRightShort} from 'react-icons/bs'
-import './Projects.css'
+// import './Projects.css'
 
 
 function Projects() {
   const [open, setOpen] = useState(false);
 
-  const visibleProjectsCount = 4
+  const visibleProjectsCount = 3
   const visibleProjects = projects.slice(0, visibleProjectsCount)
-  const hiddenProjects = projects.slice(visibleProjectsCount);
+  const hiddenProjects = projects.slice(visibleProjectsCount, 5);
 
 
 
@@ -59,11 +59,16 @@ function Projects() {
         <div className='text-center mt-4'>
           <button className='custom-btn' style={{padding: '1rem 1.25rem'}} onClick={() => setOpen(!open)}>{open ? 'Show Less':'Show More' }</button>
         </div>
+        <div className='d-flex flex-column'>
+          <Link to="/archive" className='custom-link d-inline-block m-0 mx-lg-4  mt-5' aria-label="View Full Project Archive">
+            <span>View Full Project Archive</span> <BsArrowRightShort className='arrow'/> 
+          </Link>
+          <Link to="/portfolio" className='custom-link d-inline-block m-0 mx-lg-4  mt-3' aria-label="View Full Portfolio">
+            <span>View Full Portfolio</span> <BsArrowRightShort className='arrow'/> 
+          </Link>
+        </div>
+        
 
-        <Link to="/archive" className='archive-link d-inline-block m-0 mx-lg-4  mt-5' aria-label="View Full Project Archive">
-          <span>View Full Project Archive</span> <BsArrowRightShort className='arrow'/> 
-        </Link>
-         
       </Container>
      
     </section>
