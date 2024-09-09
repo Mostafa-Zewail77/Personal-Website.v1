@@ -6,6 +6,7 @@ import{BsFacebook,BsGithub,BsLinkedin ,BsInstagram} from 'react-icons/bs'
 import { MyNav } from '../../components'
 
 function Profile({ avatar}) {
+  const resumeURL = "/Mostafa_Hassan_Resume.pdf";
   return (
     <Container className='profile section__padding sticky-top d-flex flex-column justify-content-lg-between  '>
       <Row className='mt-5 mt-lg-0'>
@@ -17,12 +18,12 @@ function Profile({ avatar}) {
             <h2>Mostafa Hassan</h2>
             <p> I'm a front-end developer focused on creating visually appealing interfaces and delivering seamless user experiences.</p> 
             
-            <a href="https://drive.google.com/uc?export=download&id=15kFak7A4UtwNMOVBjF9UENkRjYJB7oUX&confirm=no_antivirus&export?format=pdf"
-              download="Mostafa_Hassan_Resume.pdf" >
+            <a href={resumeURL}
+              target="_blank" rel='noopener noreferrer' >
               <button  className='custom-btn mt-1'>
                 Resume
               </button>
-            </a>
+            </a>            
           </div>
          
           <MyNav />

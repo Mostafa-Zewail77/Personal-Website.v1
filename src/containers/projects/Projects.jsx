@@ -4,7 +4,6 @@ import { Heading, ProjectCard } from '../../components'
 import { Col,  Collapse,  Container,  Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import {BsArrowRightShort} from 'react-icons/bs'
-// import './Projects.css'
 
 
 function Projects() {

@@ -1,7 +1,6 @@
 .showcase-title {
     font-weight: bold;
     line-height: 0.9;
-    /* font-size: 130px; */
     font-size: clamp(4rem, 6rem, 10rem);
     text-align: center;
     color: var(--color-heading);
