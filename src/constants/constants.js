@@ -73,6 +73,15 @@ export const projects = [
       visit: 'https://youtubeclone-dev.vercel.app',
       id: 2,
     },
+    {
+      title: 'Nike',
+      description: "A responsive landing page featuring a modern and visually appealing user interface. This project serves as a <span class='highlight'>multipurpose template</span> that can be customized to suit various purposes. If you are seeking a modern web presence, you can easily adapt this landing page to your unique needs.",
+      image: nike,
+      tags: ['React','Tailwind CSS','Vite','Vercel '],
+      source: 'https://github.com/mostafahassan-dev/Nike-Landing-Page',
+      visit: 'https://nike--landing-page.vercel.app/',
+      id: 3,
+    },
     
     {
       title: 'Botify',
@@ -81,15 +90,6 @@ export const projects = [
       tags: ['Vanilla JavaScript','Express','Vite','OpenAI','Vercel '],
       source: 'https://github.com/mostafahassan-dev/Botify',
       visit: 'https://botify-ai.vercel.app',
-      id: 3,
-    },
-    {
-      title: 'Nike',
-      description: "A responsive landing page featuring a modern and visually appealing user interface. This project serves as a <span class='highlight'>multipurpose template</span> that can be customized to suit various purposes. If you are seeking a modern web presence, you can easily adapt this landing page to your unique needs.",
-      image: nike,
-      tags: ['React','Tailwind CSS','Vite','Vercel '],
-      source: 'https://github.com/mostafahassan-dev/Nike-Landing-Page',
-      visit: 'https://nike--landing-page.vercel.app/',
       id: 4,
     },
     {

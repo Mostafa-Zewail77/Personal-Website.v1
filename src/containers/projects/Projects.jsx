@@ -9,9 +9,9 @@ import {BsArrowRightShort} from 'react-icons/bs'
 function Projects() {
   const [open, setOpen] = useState(false);
 
-  const visibleProjectsCount = 3
+  const visibleProjectsCount = 4;
   const visibleProjects = projects.slice(0, visibleProjectsCount)
-  const hiddenProjects = projects.slice(visibleProjectsCount, 5);
+  // const hiddenProjects = projects.slice(visibleProjectsCount, 5);
 
 
 
@@ -35,33 +35,7 @@ function Projects() {
             ))
           }
         </Row>
-
-        <Collapse in={open}>
-          <Row >
-        
-            {hiddenProjects.map(({title,description,image,tags,source,visit,id})=>(  
-              <Col  sm={12} key={id} className='p-2' >
-                <ProjectCard
-                  title={title}
-                  description={description}
-                  image={image}
-                  tags={tags}
-                  source={source}
-                  visit={visit}
-                  id={id}
-                />
-              </Col>
-              ))   
-            }
-          </Row>
-        </Collapse>      
-        <div className='text-center mt-4'>
-          <button className='custom-btn' style={{padding: '1rem 1.25rem'}} onClick={() => setOpen(!open)}>{open ? 'Show Less':'Show More' }</button>
-        </div>
-        <div className='d-flex flex-column'>
-          <Link to="/archive" className='custom-link d-inline-block m-0 mt-5' aria-label="View Full Project Archive">
-            <span>View Full Project Archive</span> <BsArrowRightShort className='arrow'/> 
-          </Link>
+        <div>
           <Link to="/portfolio" className='custom-link d-inline-block m-0 mt-5' aria-label="View Full Portfolio">
             <span>View Full Portfolio</span> <BsArrowRightShort className='arrow'/> 
           </Link>
