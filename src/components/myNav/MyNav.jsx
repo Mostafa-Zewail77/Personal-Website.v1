@@ -16,7 +16,6 @@ function MyNav() {
               spy={true}
               smooth={true}
               duration={50}
-              offset={-565}
             >
               About
             </Link>
@@ -28,7 +27,6 @@ function MyNav() {
               spy={true}
               smooth={true}
               duration={50}
-              offset={-563}
             >
               Projects
             </Link>
@@ -39,7 +37,6 @@ function MyNav() {
               spy={true}
               smooth={true}
               duration={50}
-              offset={-560}
             >
               Contact
             </Link> 

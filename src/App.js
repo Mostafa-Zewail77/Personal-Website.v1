@@ -5,6 +5,7 @@ import { Archive, Loader, Portfolio } from './components';
 import {fetchFromAPI} from './utils/fetchFromAPI';
 import { Route, Routes } from 'react-router-dom';
 import Certifications from './components/certifications/Certifications';
+import ScrollRestore from './components/ScrollRestore';
 
 
 
@@ -40,12 +41,15 @@ if (!data) return <Loader/>
       ? (<Loader/>) 
       : (
         
+        <>
+        <ScrollRestore/>
         <Routes>
           <Route path="/" element={<Layout data={data} />} />
           <Route path="/archive" element={<Archive data={data}/>} />
           <Route path="/certifications" element={<Certifications/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
         </Routes>
+        </>
       )
       }
 

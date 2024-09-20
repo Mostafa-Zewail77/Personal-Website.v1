@@ -18,10 +18,10 @@ function Portfolio() {
                 <p>Portfolio</p>                 
                 <p style={{color:'var(--color-light)'}}>SHOWCASE</p>
             </div>
-            <p className='portfolio-text text-center m-auto py-2'>
+            <div className='portfolio-text text-center m-auto py-2'>
                 A diverse collection of the work I've done.
                 <p style={{fontSize:'var(--fs-xs)'}}>(more coming soon)  </p>
-            </p>
+            </div>
         </div>
         <div className="divider">
             <hr/>
