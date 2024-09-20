@@ -10,7 +10,7 @@ function Layout({data}) {
   return (
     <Container>
           <Corner/>
-          <Row>
+          <Row  className='px-lg-3 mx-lg-3'>
             <Col lg={5} >
               <Profile avatar={data[0].owner.avatar_url } /> 
             </Col>

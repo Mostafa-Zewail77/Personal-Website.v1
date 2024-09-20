@@ -13,7 +13,7 @@ function Portfolio() {
         <Link to="/" className='back-link d-inline-block mb-3' aria-label="back">
             <BsArrowLeftShort className='arrow' /> <span>Mostafa Hassan</span>
         </Link>
-        <div class="portfolio-header d-flex justify-content-center flex-column my-5 ">
+        <div className="portfolio-header d-flex justify-content-center flex-column my-5 ">
             <div className="showcase-title">
                 <p>Portfolio</p>                 
                 <p style={{color:'var(--color-light)'}}>SHOWCASE</p>

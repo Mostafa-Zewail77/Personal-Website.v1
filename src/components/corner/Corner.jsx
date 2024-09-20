@@ -9,7 +9,7 @@ function Corner() {
       className="github-corner"
       href='https://github.com/mostafahassan-dev/Personal-Website.v1'
       target="_blank"
-      rel='noopener'
+      rel='noopener noreferrer'
     >        
         <svg width="80" height="80" viewBox="0 0 250 250" fill="#0a192f" aria-hidden="true">
             <path  fill="#64ffda" d="M0 0l115 115h15l12 27 108 108V0z" /> 

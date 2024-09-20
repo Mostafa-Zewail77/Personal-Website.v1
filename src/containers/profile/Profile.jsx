@@ -16,7 +16,7 @@ function Profile({ avatar}) {
           </div>
           <div className=" text-center text-md-start">
             <h2>Mostafa Hassan</h2>
-            <p> I'm a front-end developer focused on creating visually appealing interfaces and delivering seamless user experiences.</p> 
+            <p className='pe-md-3'>Crafting interfaces. Building polished software and web experiences.</p> 
             
             <a href={resumeURL}
               target="_blank" rel='noopener noreferrer' >

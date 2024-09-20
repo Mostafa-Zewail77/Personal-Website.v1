@@ -19,7 +19,7 @@ function Projects() {
     <section id='projects' className='section__padding'>
       <Heading sectionHeader= 'Some Projects I’ve Built'/>
 
-      <Container className='p-1' >
+      <Container className='px-0' >
         <Row >
           {visibleProjects.map(({ title, description, image, tags, source, visit, id }) => (
             <Col sm={12}  key={id} className='p-2 '>
@@ -59,10 +59,10 @@ function Projects() {
           <button className='custom-btn' style={{padding: '1rem 1.25rem'}} onClick={() => setOpen(!open)}>{open ? 'Show Less':'Show More' }</button>
         </div>
         <div className='d-flex flex-column'>
-          <Link to="/archive" className='custom-link d-inline-block m-0 mx-lg-4  mt-5' aria-label="View Full Project Archive">
+          <Link to="/archive" className='custom-link d-inline-block m-0 mt-5' aria-label="View Full Project Archive">
             <span>View Full Project Archive</span> <BsArrowRightShort className='arrow'/> 
           </Link>
-          <Link to="/portfolio" className='custom-link d-inline-block m-0 mx-lg-4  mt-3' aria-label="View Full Portfolio">
+          <Link to="/portfolio" className='custom-link d-inline-block m-0 mt-5' aria-label="View Full Portfolio">
             <span>View Full Portfolio</span> <BsArrowRightShort className='arrow'/> 
           </Link>
         </div>

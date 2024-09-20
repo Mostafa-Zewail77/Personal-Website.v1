@@ -1,10 +1,16 @@
-#about>p{
+.about-text{
     color: var(--color-text);
     font-size: var(--fs-md);
     font-weight: 500;
     line-height: 1.5;    
 }
-
+.about-link{
+    color: var(--color-heading);
+}
+.about-link:hover{
+    color: var(--color-heading);
+    border-bottom: 1px solid var(--color-green);
+}
 .techs p{
     position: relative;
     padding-left: 20px;
@@ -13,6 +19,7 @@
     font-size: clamp(var(--fs-xxs),3vw,var(--fs-xs));
     margin: 0;
     margin-bottom: 7px;
+    white-space: nowrap;
 }
 
 .techs p::before{

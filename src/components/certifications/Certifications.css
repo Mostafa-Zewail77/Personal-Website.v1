@@ -1,0 +1,116 @@
+.badges-header, .certifications-header{
+    cursor: pointer;
+}
+.accordion-icon {
+    transition: transform .2s;
+    color: var(--color-green);
+    width: 20px;
+    height: 20px;
+}
+  
+.accordion-icon.rotate {
+    transform: rotate(180deg);
+}
+
+.certificate-card{
+    overflow: hidden;
+    border:  none;
+    max-height: 205px;
+}
+
+.certificate-card .overlay{
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+   
+}
+
+.certificate-card .overlay .eye{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    background-color: var(--color-divider);
+    color: var(--color-light);
+}
+.certificate-card .overlay .certificate-title{
+    width: 100%;
+    padding: 10px;
+    bottom: 0px;
+    transform:  translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: var(--fs-sm);
+    color: var(--color-light);
+    background-color: var(--color-divider);
+    font-family: var(--font-mono);
+}
+.certificate-card:hover .overlay{
+    opacity: 1;
+}
+.certificate-card:hover .eye {
+    transform: translateY(-50%);
+}
+
+.certificate-card:hover .certificate-title {
+    transform: translateY(0);
+}
+
+.certificate-card img {
+    width: 100%;
+    scale: 1.05;
+  
+       
+}
+
+.badge-info h4{
+    color: var(--color-heading);
+}
+
+
+.badge-info ul li{
+    font-size: var(--fs-xxs);
+    font-family: var(--font-sans);
+    font-weight: 600;
+    padding: 0.30rem .80rem;
+    margin: 0 0.4rem 0.4rem 0;
+    border: 1px solid var(--color-hover);
+    border-radius: 40px;
+    background-color: var(--color-hover);
+    color: rgb(94 ,234 ,212);
+    opacity: .75;
+    line-height: 1.5;
+
+}
+
+.badg-link ,.badg-link:hover,.show-description{
+    font-size: clamp(var(--fs-sm),3vw,var(--fs-md));
+    font-size: var(--fs-sm);
+    color: var(--color-heading);
+    cursor: pointer;
+}
+
+.badg-link{
+    border-bottom: 1px solid ;
+}
+
+.show-description:active{
+    transition: 0.3s;
+    transform: scale(0.93);
+}
+@media (max-width: 768px) {
+
+    .certificate-card{
+        max-height: 222px;
+    }
+}
+  
+@media (max-width: 576px) {
+    .certificate-card{
+        max-height: unset;
+    }
+   
+}
+
