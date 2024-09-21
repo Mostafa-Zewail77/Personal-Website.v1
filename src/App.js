@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
 import "./App.css"
 import {Layout}  from './containers';
-import { Archive, Loader, Portfolio } from './components';
+import { Archive, Certifications, Loader, PageNotFound, Portfolio, ScrollRestore } from './components';
 import {fetchFromAPI} from './utils/fetchFromAPI';
 import { Route, Routes } from 'react-router-dom';
-import Certifications from './components/certifications/Certifications';
-import ScrollRestore from './components/ScrollRestore';
 
 
 
@@ -48,6 +46,7 @@ if (!data) return <Loader/>
           <Route path="/archive" element={<Archive data={data}/>} />
           <Route path="/certifications" element={<Certifications/>} />
           <Route path='/portfolio' element={<Portfolio/>} />
+          <Route path='*' element={<PageNotFound/>} />
         </Routes>
         </>
       )

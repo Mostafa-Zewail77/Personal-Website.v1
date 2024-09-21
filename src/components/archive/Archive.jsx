@@ -24,17 +24,6 @@ const monthNames = {
 
 function Archive({data}) {
   
-  // const [loading, setLoading] = useState(true);
-
-  // useEffect(() => {
-    
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 500);
-  // }, []);
-
-  // if (loading) return <Loader />;
-
   return (
     <Container className='archive section__padding'>
        
