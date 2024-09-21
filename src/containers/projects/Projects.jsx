@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { projects } from '../../constants/constants'
 import { Heading, ProjectCard } from '../../components'
-import { Col,  Collapse,  Container,  Row } from 'react-bootstrap'
+import { Col,  Container,  Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import {BsArrowRightShort} from 'react-icons/bs'
 
 
 function Projects() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   const visibleProjectsCount = 4;
   const visibleProjects = projects.slice(0, visibleProjectsCount)

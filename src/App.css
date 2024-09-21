@@ -68,6 +68,10 @@ a, a:hover {
     color: var(--color-heading);
 }
 
+.divider{
+    height:1px;
+    background:var(--color-divider);
+}
 
 .section__padding {
     padding: 6rem 1rem ;

@@ -46,10 +46,7 @@ function Certifications() {
                             <Col  sm={4} lg={2} className='py-3 d-none d-sm-flex justify-content-center' >
                                 <img src={badge.badge} alt={badge.title} className='w-75' />
                             </Col>
-                            <Col  sm={8} lg={10}
-                                style={{color:"var(--color-text)"}} 
-                                className='badge-info py-3' >
-
+                            <Col  sm={8} lg={10} className='badge-info py-3' >
                                 <h4>{badge.title}</h4>
                                 
                                 <div 
@@ -62,7 +59,7 @@ function Certifications() {
                                     Verfide by Credly 
                                 </div>
                             
-                                <ul className='list-unstyled d-flex flex-wrap'>
+                                <ul className='topics list-unstyled d-flex flex-wrap'>
                                     {badge.skills.map((skill, index) => (
                                         <li key={`${badge.id}-${index}`} >
                                             {skill}
@@ -73,7 +70,7 @@ function Certifications() {
                                 <p>Provider: {badge.issuer}</p>
                                 <p>Issued: {badge.date}</p>
                                 <div>
-                                    <div className='d-flex align-items-start' style={{color:'var(--color-text)'}}>
+                                    <div className='d-flex align-items-start'>
                                         <p className='me-3 show-description' onClick={()=>toggleShow(index)} >
                                             {openBadges.includes(index) ? 'Hide Description' : 'Show Description'}
                                         </p>
@@ -91,7 +88,7 @@ function Certifications() {
                                     </Collapse>
                                 </div>
                             </Col>
-                            <div style={{height:'1px',background:'var(--color-divider)',opacity:'0.5'}}/>
+                            <div className='divider'/>
                         </Row>
                         ))
                         

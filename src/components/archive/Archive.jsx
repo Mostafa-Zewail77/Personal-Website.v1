@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Archive.css'
 import { Col, Container, Row } from 'react-bootstrap';
-import Loader from '../loader/Loader';
 import { Link } from 'react-router-dom';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { BsArrowLeftShort } from 'react-icons/bs';
+import { topicFormat } from '../../constants/constants';
 
 
 const monthNames = {
@@ -24,16 +24,16 @@ const monthNames = {
 
 function Archive({data}) {
   
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    setTimeout(() => {
-      setLoading(false);
-    }, 500);
-  }, []);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 500);
+  // }, []);
 
-  if (loading) return <Loader />;
+  // if (loading) return <Loader />;
 
   return (
     <Container className='archive section__padding'>
@@ -53,7 +53,6 @@ function Archive({data}) {
         <Col md={4} className='d-none d-md-block'><h4> Topics</h4></Col>
         <Col xs={1}><h4>Link </h4></Col>
       </Row>
-      <div style={{height:'1px',background:'var(--color-divider)',opacity:'0.5'}}/>
     {data && (
       
         
@@ -64,7 +63,7 @@ function Archive({data}) {
             return dateB - dateA;
           })
           .map((repo) => (
-              <Row key={repo.id} className='align-item-start py-2 tb'>
+              <Row key={repo.id} className='align-item-start py-3 tb'>
                 <Col  xs={4} md={2} className='date'>
                   <p>{`${monthNames[repo.created_at.slice(5, 7)]}-${repo.created_at.slice(0, 4)}`}</p>                  
                 </Col>
@@ -77,7 +76,8 @@ function Archive({data}) {
                 <Col  md={4} className=' d-none d-md-block topics'>
                   <ul className='list-unstyled d-none d-md-flex flex-wrap '>
                     {repo.topics.map((topic, index) => (
-                      <li key={`${repo.id}-${index}`}>{topic}</li>
+                      // topicFormat[topic] &&
+                      <li key={`${repo.id}-${index}`}>{topicFormat[topic] || topic}</li>
                     ))}
                   </ul>
                 </Col>
@@ -90,9 +90,8 @@ function Archive({data}) {
                     : (<a className='ms-1 ms-md-2 d-md-none' href={repo.html_url} target='_blank' rel="noopener noreferrer"> <FiGithub /></a> )
                   }
                 </Col>
-
-                <div style={{height:'1px',background:'var(--color-divider)',opacity:'0.5'}}/>
-
+                {/* <div className='divider my-2'/> */}
+  
               </Row>
               
           ))

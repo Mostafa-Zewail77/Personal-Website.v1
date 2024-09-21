@@ -60,9 +60,11 @@
 
 .certificate-card img {
     width: 100%;
-    scale: 1.05;
-  
-       
+    scale: 1.05;      
+}
+
+.badge-info{
+    color: var(--color-text);
 }
 
 .badge-info h4{
@@ -71,18 +73,7 @@
 
 
 .badge-info ul li{
-    font-size: var(--fs-xxs);
-    font-family: var(--font-sans);
-    font-weight: 600;
-    padding: 0.30rem .80rem;
     margin: 0 0.4rem 0.4rem 0;
-    border: 1px solid var(--color-hover);
-    border-radius: 40px;
-    background-color: var(--color-hover);
-    color: rgb(94 ,234 ,212);
-    opacity: .75;
-    line-height: 1.5;
-
 }
 
 .badg-link ,.badg-link:hover,.show-description{
