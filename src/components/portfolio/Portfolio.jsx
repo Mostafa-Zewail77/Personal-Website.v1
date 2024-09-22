@@ -5,10 +5,16 @@ import { projects } from '../../constants/constants'
 import { FiEye } from "react-icons/fi";
 import { Link } from 'react-router-dom';
 import { BsArrowLeftShort } from 'react-icons/bs';
+import { Helmet } from 'react-helmet-async';
 
 
 function Portfolio() {
   return (
+    <>
+    <Helmet>
+      <title>Portfolio | Mostafa Hassan</title>
+      <meta name="description" content="A diverse collection of the work I've done." />
+    </Helmet>
     <Container  className='portfolio section__padding'>
         <Link to="/" className='back-link d-inline-block mb-3' aria-label="back">
             <BsArrowLeftShort className='arrow' /> <span>Mostafa Hassan</span>
@@ -52,12 +58,8 @@ function Portfolio() {
                 </Col>
         ))}
         </Row>
-
-
-
-
-
     </Container >
+    </>
   )
 }
 

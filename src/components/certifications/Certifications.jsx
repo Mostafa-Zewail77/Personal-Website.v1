@@ -8,6 +8,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { BsArrowLeftShort } from 'react-icons/bs';
 import {MdVerified } from 'react-icons/md'
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 function Certifications() {
 
     const [activeIndex, setActiveIndex] = useState(1);
@@ -27,6 +28,10 @@ function Certifications() {
 
    
     return (
+        <>
+         <Helmet>
+            <title>Certifications | Mostafa Hassan</title>
+         </Helmet>
         
         <Container className='section__padding'>
             <Link to="/" className='back-link d-inline-block mb-5' aria-label="back">
@@ -137,10 +142,8 @@ function Certifications() {
       
         
         </Container>
-
-    
+        </>    
       );
-
 }
 
 export default Certifications

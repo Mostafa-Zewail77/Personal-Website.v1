@@ -3,11 +3,16 @@ import React from 'react'
 import { About, Contact, Footer, Profile, Projects } from '../../containers';
 import {  Corner } from '../../components';
 import { Col, Container, Row } from 'react-bootstrap';
+import { Helmet } from 'react-helmet-async';
 
 
 function Layout({data}) {
 
   return (
+    <>
+     <Helmet>
+        <title>Mostafa Hassan</title>
+     </Helmet>
     <Container>
           <Corner/>
           <Row  className='px-lg-3 mx-lg-3'>
@@ -24,6 +29,7 @@ function Layout({data}) {
           </Row>
           
     </Container>
+    </>
   )
 }
 

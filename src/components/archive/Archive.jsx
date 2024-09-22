@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
 import { BsArrowLeftShort } from 'react-icons/bs';
 import { topicFormat } from '../../constants/constants';
+import { Helmet } from 'react-helmet-async';
 
 
 const monthNames = {
@@ -25,6 +26,12 @@ const monthNames = {
 function Archive({data}) {
   
   return (
+    <>
+    <Helmet>
+      <title>Archive | Mostafa Hassan</title>
+      <meta name="description" content="A big list of repos I’ve worked on" />
+    </Helmet>
+    
     <Container className='archive section__padding'>
        
         <div className="archive-header pb-3 ">
@@ -88,6 +95,7 @@ function Archive({data}) {
 
     
   </Container>
+  </>
   
   );
 }
