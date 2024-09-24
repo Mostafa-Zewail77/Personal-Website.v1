@@ -1,11 +1,11 @@
 .about-text{
     color: var(--color-text);
     font-size: var(--fs-md);
-    font-weight: 500;
-    line-height: 1.5;    
+    line-height: 1.5;  
 }
 .about-link{
     color: var(--color-heading);
+    font-weight: 500;
 }
 .about-link:hover{
     color: var(--color-heading);

@@ -15,7 +15,7 @@ function Layout({data}) {
      </Helmet>
     <Container>
           <Corner/>
-          <Row  className='px-lg-3 mx-lg-3'>
+          <Row  className='px-lg-4 mx-lg-4'>
             <Col lg={5} >
               <Profile avatar={data[0].owner.avatar_url } /> 
             </Col>

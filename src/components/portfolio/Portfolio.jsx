@@ -29,9 +29,6 @@ function Portfolio() {
                 <p style={{fontSize:'var(--fs-xs)'}}>(more coming soon)  </p>
             </div>
         </div>
-        <div className="divider">
-            <hr/>
-        </div>
         
         <Row className='portfolio-grid g-3 justify-content-center' >
         {projects.map((project) => (

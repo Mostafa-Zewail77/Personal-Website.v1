@@ -20,9 +20,9 @@ function Projects() {
       <Heading sectionHeader= 'Some Projects I’ve Built'/>
 
       <Container className='px-0' >
-        <Row >
+        <Row className='project-cards g-0'>
           {visibleProjects.map(({ title, description, image, tags, source, visit, id }) => (
-            <Col sm={12}  key={id} className='p-2 '>
+            <Col sm={12}  key={id} className='pb-3 px-0'>
               <ProjectCard
                 title={title}
                 description={description}

@@ -6,14 +6,11 @@
     padding: 1rem 1.5rem;
     position:relative;
     height: auto;
-    transition: all 0.25s ease-out;
+    transition: all 0.25s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-
-
 
 .custom-card .img-box{
     position:absolute;
@@ -33,6 +30,10 @@
     scale: 1.05;
     mix-blend-mode: soft-light;  
     /* mix-blend-mode: multiply;  */
+}
+
+.project-cards:hover .custom-card:not(:hover) {
+    opacity: 0.5;
 }
 
 .custom-card:hover .img-box{
