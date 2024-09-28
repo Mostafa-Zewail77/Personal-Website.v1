@@ -3,11 +3,11 @@
     font-size: var(--fs-md);
     line-height: 1.5;  
 }
-.about-link{
+.highlight-link{
     color: var(--color-heading);
     font-weight: 500;
 }
-.about-link:hover{
+.highlight-link:hover{
     color: var(--color-heading);
     border-bottom: 1px solid var(--color-green);
 }

@@ -19,9 +19,9 @@ function About() {
            
             <p>
               I've worked on various projects, from personal websites to complex platforms, with a focus on creating seamless user experiences.
-              You can explore my <Link to="/archive" className='about-link'>full projects list</Link>. 
+              You can explore my <Link to="/archive" className='highlight-link'>full projects list</Link>. 
               As a self-taught developer, I've honed my skills through dedication and a passion for learning. 
-              You can view my <Link to="/certifications" className='about-link '>certifications here</Link>.
+              You can view my <Link to="/certifications" className='highlight-link '>certifications here</Link>.
             
               {/* I believe that great user experiences are born from the perfect balance of solid engineering and thoughtful design. */}
             </p>

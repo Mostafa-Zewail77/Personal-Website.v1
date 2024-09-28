@@ -10,11 +10,11 @@ function Layout({data}) {
 
   return (
     <>
-     <Helmet>
-        <title>Mostafa Hassan</title>
-     </Helmet>
-    <Container>
-          <Corner/>
+    <Helmet>
+      <title>Mostafa Hassan</title>
+    </Helmet>
+    <Corner/>
+    <Container className='position-relative'>
           <Row  className='px-lg-4 mx-lg-4'>
             <Col lg={5} >
               <Profile avatar={data[0].owner.avatar_url } /> 
@@ -24,10 +24,9 @@ function Layout({data}) {
               <About/>
               <Projects/>
               <Contact/>
-              <Footer/>
             </Col>
           </Row>
-          
+          <Footer/>      
     </Container>
     </>
   )

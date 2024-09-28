@@ -109,7 +109,11 @@ a, a:hover {
 
 @media screen and (max-width: 768px){
     .section__padding {
-        padding: 3rem 1rem;
+        padding: 3rem 0.5rem;
     } 
+    .footer{
+        position: relative!important;
+        margin: 2.5rem 0 .5rem 0;
+    }
     
 }

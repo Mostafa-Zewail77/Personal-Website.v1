@@ -57,7 +57,7 @@ export const projects = [
     },
     {
       title: 'E-Store',
-      description:" A full-stack e-store contains essential e-commerce functionalities, including product browsing, shopping cart management, and secure payment processing through <span class='highlight'>Stripe</span>. <br/>Integrated <span class='highlight'>Commerce.js</span> to effectively manage product inventory and order processing.",
+      description:" A full-stack e-store contains essential e-commerce functionalities, including product browsing, shopping cart management, and secure payment processing through <span class='highlight'>Stripe</span>. Integrated <span class='highlight'>Commerce.js</span> to effectively manage product inventory and order processing.",
       image: store,
       tags: ['React','Material UI','Commerce.js','Stripe','Vercel '],
       source: 'https://github.com/mostafahassan-dev/E-Store',

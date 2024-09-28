@@ -7,11 +7,8 @@ import {BsArrowRightShort} from 'react-icons/bs'
 
 
 function Projects() {
-  // const [open, setOpen] = useState(false);
-
   const visibleProjectsCount = 4;
   const visibleProjects = projects.slice(0, visibleProjectsCount)
-  // const hiddenProjects = projects.slice(visibleProjectsCount, 5);
 
 
 
