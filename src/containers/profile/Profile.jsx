@@ -2,7 +2,7 @@ import React from 'react'
 import './Profile.css'
 
 import { Col, Container, Row  } from 'react-bootstrap'
-import{BsFacebook,BsGithub,BsLinkedin ,BsInstagram} from 'react-icons/bs'
+import{BsGithub,BsLinkedin ,BsInstagram, BsWhatsapp} from 'react-icons/bs'
 import { MyNav } from '../../components'
 
 function Profile({ avatar}) {
@@ -33,7 +33,7 @@ function Profile({ avatar}) {
         <Col xs={2}> <a href='https://www.linkedin.com/in/mostafahassan-dev/'target='_blank' rel='noopener noreferrer'> <BsLinkedin title='LinkedIn'/></a> </Col>
         <Col xs={2}> <a href='https://github.com/mostafahassan-dev' target='_blank'rel='noopener noreferrer' > <BsGithub title='GitHub'/></a> </Col>
         <Col xs={2}> <a href='https://www.instagram.com/mostafahassan.dev/'target='_blank' rel='noopener noreferrer'> <BsInstagram title='Instagram'/></a> </Col>      
-        <Col xs={2}> <a href='https://www.facebook.com/profile.php?id=100006284646611'target='_blank' rel='noopener noreferrer'> <BsFacebook title='Facebook'/></a> </Col>      
+        <Col xs={2}> <a href={`https://wa.me/${process.env.REACT_APP_WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer"> <BsWhatsapp title="WhatsApp" /> </a></Col>
       </Row>
   
 

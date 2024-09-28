@@ -15,9 +15,8 @@ function Footer() {
       <p className='m-auto font-monospace opacity-50 mt-4' 
         style={{
           color:"var(--color-text)", 
-          fontSize:'var(--fs-xs)',
-          lineHeight:'1.5', 
-          maxWidth:'320px',
+          fontSize:'var(--fs-xxs)', 
+          maxWidth:'350px',
           wordSpacing:"-3px",
         }} >
         Inspired by <a href='https://brittanychiang.com' target='_blank' rel='noopener noreferrer' className='highlight-link'>Brittany Chiang</a>.
