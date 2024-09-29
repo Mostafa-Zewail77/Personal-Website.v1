@@ -22,3 +22,9 @@
     margin-left: 20px;
     background-color: var(--color-divider);
 }
+
+@media screen and (max-width: 480px) {
+    .heading h2::after {
+      width: 150px;
+    }
+  }

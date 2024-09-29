@@ -37,7 +37,7 @@ function Certifications() {
             <Link to="/" className='back-link d-inline-block mb-5' aria-label="back">
                 <BsArrowLeftShort className='arrow' /> <span>Mostafa Hassan</span>
             </Link>
-            <div className="badges px-3 m-3 ">
+            <div className="badges px-1 m-1 px-md-3 m-md-3">
 
                 <div className="badges-header d-flex justify-content-between "
                     onClick={() => toggleAccordion(1)}>
@@ -102,7 +102,7 @@ function Certifications() {
                 </Collapse>
             </div>
  
-            <div className="certifications px-3 m-3">
+            <div className="certifications px-1 m-1 px-md-3 m-md-3">
                 <div className="certifications-header d-flex justify-content-between "
                     onClick={() => toggleAccordion(0)}>
                     <Heading sectionHeader= 'Certifications'/>

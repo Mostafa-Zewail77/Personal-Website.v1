@@ -43,5 +43,7 @@
     .profile{
         height: auto;
         position: static;
+        padding: 1rem 0;
+        margin-top: 4rem;
     }
 }

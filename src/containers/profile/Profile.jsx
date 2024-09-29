@@ -9,7 +9,7 @@ function Profile({ avatar}) {
   const resumeURL = "/Mostafa_Hassan_Resume.pdf";
   return (
     <Container className='profile section__padding sticky-top d-flex flex-column justify-content-lg-between  '>
-      <Row className='mt-5 mt-lg-0'>
+      <Row>
         <Col className="pe-4 pe-lg-0 d-flex flex-column flex-md-row-reverse align-items-center justify-content-between flex-lg-column align-items-lg-start ">
           <div className="avatar me-md-5 ">
             <img src={avatar} alt="avatar"  width='100%' height='100%' />
